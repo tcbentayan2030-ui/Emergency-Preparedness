@@ -32,6 +32,8 @@ function main()
     earthquake()
   if disaster == 1 and setting == "street"
     earthquakestreet()
+  if disaster == 2 and setting == "home"
+    typhoonhome()
 
   end function
 
@@ -94,6 +96,35 @@ function earthquake()
         display "A large pile of debris hit you! You lose consciousness and never gained it back again."
 
     end function
+
+    function typhoonhome()
+      display "It has been raining heavily for a while. Your anxiety was slowly rising. What do you do?"
+      display "1. Watch the news with your family."
+      display "2. Distract yourself by playing games and staying positive."
+      input choice6
+
+      if choice6 == 1
+        display "The news reporter said a strong typhoon was heading to your province! What do you do?"
+        display "1. Prepare an emergency bag and try to search up an evacuation plan."
+        display "2. Leave it be. It'll pass. What's most important is staying calm."
+        input choice7
+
+        if choice7 == 1
+          display "You packed all the essentails. What now?"
+          display "1. Run away to find authorities who can protect and guide you."
+          display "2. Follow your parents upstairs."
+          input choice8
+
+          if choice8 == 1
+            display "The wind was too strong, but you were determined. The trees shook around, it was normal under these conditions."
+            display "You saw a tree falling straight towards you, and boom!"
+            display "You died."
+
+          if choices8 == 2
+            display ""
+
+        if choice7 == 2
+          display "You were completely unprepared. What will you do now?"
 
     
 
