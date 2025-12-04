@@ -271,6 +271,193 @@ function typhoonschool()
 
 end function
 
+function floodhome()
+  display "It's been raining nonstop for hours. The water outside is rising quickly. What do you do? (enter 1-2)"
+  display "1. Check the news and weather updates."
+  display "2. Ignore it and continue with your day."
+  input choice17
+
+  if choice17 == 1 then
+    display "The news reports a severe flood warning in your area!"
+    display "Your parents tell you to prepare the emergency kit. What do you do? (enter 1-2)"
+    display "1. Help prepare the emergency kit thoroughly."
+    display "2. Only pack a few items and rush upstairs immediately."
+    input choice18
+
+    if choice18 == 1 then
+      display "The floodwater begins entering the house! What now? (enter 1-2)"
+      display "1. Go upstairs and stay calm."
+      display "2. Go outside to look for rescuers."
+      input choice19
+
+      if choice19 == 1 then
+        display "You're upstairs and safe for now. The water rises but doesn't reach the second floor."
+        display "What do you do next? (enter 1-3)"
+        display "1. Listen to the radio for updates."
+        display "2. Look out the window to check the situation."
+        display "3. Attempt to wade through the water to reach your neighbor."
+        input choice20
+
+        if choice20 == 1 then
+          display "The news says rescuers are on the way. You stay put and conserved your supplies."
+          display "After several hours, rescuers help you out. You survived with no injuries!"
+        end if
+
+        if choice20 == 2 then
+          display "A strong current bangs debris against the window!"
+          display "Glass shatters and you get cuts, but your first-aid kit helps. You survive with minor injuries."
+        end if
+
+        if choice20 == 3 then
+          display "The floodwater outside is stronger than you expected!"
+          display "The current pulls you and drags you away..."
+          display "...You drowned."
+        end if
+
+      if choice19 == 2
+        display "You open the door and a strong surge of water hits you!"
+        display "You get swept away by the current..."
+        display "...You died."
+      end if
+
+
+    if choice18 == 2
+      display "You rushed upstairs but forgot many essentials."
+      display "The water keeps rising and the power goes out."
+      display "What do you do? (enter 1-3)"
+      display "1. Use your phone’s flashlight and stay put."
+      display "2. Try to grab items downstairs."
+      display "3. Try shouting from the window for help."
+      input choice21
+
+      if choice21 == 1 then
+        display "You conserved your energy and waited."
+        display "Rescuers eventually arrived. You survived, but you're cold and hungry."
+      end if
+
+      if choice21 == 2 then
+        display "You attempt to go downstairs, but the water is already too high."
+        display "You slip and get pulled underwater..."
+        display "...You died."
+      end if
+
+      if choice21 == 3 then
+        display "A neighbor hears you and signals rescue workers."
+        display "You were eventually rescued, shaken but alive."
+      end if
+
+    end if
+
+
+  else  // choice17 == 2
+    display "You ignored the rain... but water suddenly rushes into the house!"
+    display "You're caught off guard. What do you do? (enter 1-2)"
+    display "1. Run outside to escape the flood."
+    display "2. Go upstairs immediately."
+    input choice22
+
+    if choiceF6 == 1 then
+      display "You waded outside, but the current was much stronger than you expected."
+      display "The water knocked you off your feet..."
+      display "...You died."
+    else
+      display "You rushed upstairs just in time."
+      display "However, you didn’t bring supplies. What now? (enter 1-2)"
+      display "1. Stay calm and wait for rescue."
+      display "2. Try signaling for help through the window."
+      input choice23
+
+      if choice23 == 1 then
+        display "You waited for hours with no food or water."
+        display "Eventually, rescuers reached your home. You survived—but exhausted and dehydrated."
+      else
+        display "You shouted for help. A nearby rescue boat noticed your flashlight signal."
+        display "They rescued you safely. Good job!"
+      end if
+
+    end if
+
+  end if
+
+end function
+
+function floodstreet()
+  display "You're walking home when the rain intensifies. Water starts rising quickly along the street. What do you do? (enter 1-2)"
+  display "1. Look for higher ground nearby."
+  display "2. Continue walking home before it gets worse."
+  input choice24
+
+  if choice24 == 1 then
+    display "You climbed to higher ground. The water keeps rising."
+    display "A rescue vehicle spots you. What do you do? (enter 1-2)"
+    display "1. Wait for rescue."
+    display "2. Try running home while the road looks clear."
+    input choice25
+
+    if choice25 == 1 then
+      display "You stayed safe and were rescued. You survived!"
+    else
+      display "The 'clear' road suddenly floods with a strong surge of water..."
+      display "...You died."
+    end if
+
+  if choice24 == 2 (go home)
+    display "The water rises to your knees. What now? (enter 1-2)"
+    display "1. Keep pushing toward home."
+    display "2. Retreat to higher ground."
+    input choice26
+
+    if choice26 == 1 then
+      display "A strong current swept you off your feet."
+      display "...You died."
+    else
+      display "You reached higher ground and waited."
+      display "Rescuers eventually brought you home safely. You survived!"
+    end if
+
+  end if
+
+end function
+
+function floodschool()
+  display "Rain pours heavily and the water in the school grounds begins rising quickly."
+  display "Your teacher receives instructions from the principal."
+  display "Students who can safely get home are advised to go home immediately."
+  display "What do you do? (enter 1-2)"
+  display "1. Go home as instructed."
+  display "2. Stay inside the classroom and wait for the flood to pass."
+  input f27
+
+  if f27 == 1 then
+    display "You pack your things quickly and leave the school."
+    floodhome()
+
+  if choice27 == 2
+    display "You decide to stay inside the school even though it's not recommended."
+    display "The water outside rises fast and starts entering the classrooms!"
+    display "What do you do? (enter 1-2)"
+    display "1. Move to the second floor with remaining students."
+    display "2. Hide under a desk and hope for the best."
+    input choice28
+
+    if choice28 == 1 then
+      display "You move to the second floor and stay dry."
+      display "Hours pass. The water remains high, but rescuers eventually arrive."
+      display "You survived, but were stranded at school for a long time."
+    else
+      display "The water floods the first floor rapidly!"
+      display "Debris floats inside and knocks you over..."
+      display "...You drowned."
+    end if
+
+  end if
+
+end function
+
+main()
+
+
+
     
   
 
