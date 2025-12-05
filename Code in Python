@@ -1,0 +1,201 @@
+def main():
+    print("Welcome to our game where we will test your ability to make the right decisions during disasters.")
+    print("Pick a disaster (enter 1-3): 1. Earthquake 2. Typhoon 3. Flood")
+    disaster = input()
+    print("Choose a setting (home / school / street): ")
+    setting = input()
+
+    if disaster == "1" and (setting == "home" or setting == "school"):
+        earthquake(setting)
+    if disaster == "1" and setting == "street":
+        earthquakestreet()
+
+    if disaster == "2" and setting == "home":
+        typhoonhome()
+    if disaster == "2" and setting == "school":
+        typhoonschool()
+
+    if disaster == "3" and setting == "home":
+        floodhome()
+    if disaster == "3" and setting == "school":
+        floodschoool()
+    if disaster == "3" and setting == "street":
+        floodstreet()
+
+
+def earthquake(setting):
+    print("You are at", setting, "and the ground starts shaking aggressively! What do you do? (enter 1-2)")
+    print("1. Hide under a sturdy table and cover your head.")
+    print("2. Run outside to find adults and seek guidance.")
+    choice1 = input()
+
+    if choice1 == "1":
+        print("The shaking intensifies! What do you do? (enter 1-2)")
+        print("1. Curl up and protect your head and neck.")
+        print("2. Rush outside to seek help.")
+        choice2 = input()
+
+        if choice2 == "1":
+            print("The ground stopped shaking. You avoided broken glass and falling debris. You survived with no injuries!")
+        else:
+            print("You tripped while running outside and debris fell on you! You survived but were heavily injured.")
+    else:
+        print("You fell and twisted your ankle while running outside. What do you do? (enter 1-2)")
+        print("1. Keep running outside for help.")
+        print("2. Duck away from windows and crawl under a sturdy structure.")
+        choice3 = input()
+
+        if choice3 == "1":
+            print("You make it outside... but a car loses control and hits you.")
+            print("You died.")
+        else:
+            print("The shaking stops. Your ankle aches but you're safe. You eventually get medical attention. Good job!")
+
+
+def earthquakestreet():
+    print("You are walking outside when the ground starts shaking aggressively! What will you do? (enter 1-3)")
+    print("1. Walk away from buildings and cars, kneel down, and cover your head.")
+    print("2. Run inside a store for shelter.")
+    print("3. Lean against a wall for balance.")
+    choice4 = input()
+
+    if choice4 == "1":
+        print("Cars honk and debris falls, but you survive with minor injuries.")
+    if choice4 == "2":
+        print("Debris hits your head at the entrance! What do you do? (enter 1-2)")
+        print("1. Crawl to a sturdy structure inside.")
+        print("2. Go back outside.")
+        choice5 = input()
+
+        if choice5 == "1":
+            print("Glass shatters but you remain safe. You survive with a minor head injury.")
+        else:
+            print("You are hit by more debris and glass. You wake up in a hospital. You survived.")
+    if choice4 == "3":
+        print("A pile of debris hits you. You lose consciousness and never wake up again.")
+
+
+def typhoonhome():
+    print("Thick, dark clouds overshadow the sky. What do you do? (enter 1-2)")
+    print("1. Watch the news with your family.")
+    print("2. Distract yourself by playing games.")
+    choice6 = input()
+
+    if choice6 == "1":
+        print("The news says a typhoon is coming. You are told to pack an emergency kit.")
+        print("You packed essentials. What now? (enter 1-2)")
+        print("1. Run outside to find authorities.")
+        print("2. Unplug outlets and go upstairs.")
+        choice7 = input()
+
+        if choice7 == "1":
+            print("The wind is strong. A tree falls toward you...")
+            print("You died.")
+        else:
+            typhoon_upstairs(has_kit=True)
+
+    else:
+        print("You didn’t notice water entering the house! What now? (enter 1-2)")
+        print("1. Run outside to find help.")
+        print("2. Unplug outlets and go upstairs.")
+        choice9 = input()
+
+        if choice9 == "1":
+            print("A tree falls toward you...")
+            print("You died.")
+        else:
+            typhoon_upstairs(has_kit=False)
+
+
+def typhoon_upstairs(has_kit):
+    print("Water starts rising, but you made it upstairs safely.")
+    print("What now? (enter 1-3)")
+    print("1. Watch news on phone or radio.")
+    print("2. Watch news on TV.")
+    print("3. Open the window to look outside.")
+    choice8 = input()
+
+    if choice8 == "1":
+        print("The news says the typhoon will last two more days.")
+        if has_kit:
+            print("You had food and water. You survived perfectly!")
+        else:
+            print("You had no food or water. You survived but were dehydrated and starving.")
+    if choice8 == "2":
+        print("You plug in the TV. A power surge electrocutes you.")
+        print("You died.")
+    if choice8 == "3":
+        print("The window shatters and injures you.")
+        if has_kit:
+            print("You used your first aid supplies and survived the typhoon with minor cuts.")
+        else:
+            print("You had no first aid. You survived but nearly got an infected wound.")
+
+
+def typhoonschool():
+    print("Strong winds roar outside. Teachers announce that students must go home immediately.")
+    print("What do you do? (enter 1-2)")
+    print("1. Go home as instructed.")
+    print("2. Stay in the school building to hide.")
+    choice = input()
+
+    if choice == "1":
+        floodhome()
+    else:
+        print("You hide inside a classroom.")
+        print("Rainwater leaks through windows, but the school stays stable.")
+        print("After hours of waiting, rescue teams arrive.")
+        print("You survived.")
+
+
+def floodhome():
+    print("Rain pours heavily outside. Water starts rising in your home. What do you do? (enter 1-2)")
+    print("1. Move valuables upstairs and switch off electricity.")
+    print("2. Run outside to look for help.")
+    choice = input()
+
+    if choice == "1":
+        print("Water continues rising. What now? (enter 1-2)")
+        print("1. Stay upstairs and wait for rescue.")
+        print("2. Climb to the roof.")
+        choice2 = input()
+
+        if choice2 == "1":
+            print("Rescue teams arrive by boat. You survived!")
+        else:
+            print("You climb to the roof. After hours, rescuers spot you. You survived!")
+    else:
+        print("The current is strong! You are swept away...")
+        print("You died.")
+
+
+def floodschool():
+    print("It is raining heavily. Water starts entering the school hallways.")
+    print("Teachers advise everyone to go home immediately. What do you do? (enter 1-2)")
+    print("1. Go home as instructed.")
+    print("2. Hide inside the school.")
+    choice = input()
+
+    if choice == "1":
+        floodhome()
+    else:
+        print("You stay inside a classroom on the second floor.")
+        print("Floodwaters rise only on the first floor.")
+        print("Rescuers arrive later. You survived!")
+
+
+def floodstreet():
+    print("You are outside and streets start to flood quickly! What do you do? (enter 1-2)")
+    print("1. Try to go home immediately.")
+    print("2. Climb to higher ground and wait.")
+    choice = input()
+
+    if choice == "1":
+        floodhome()
+    else:
+        print("You climb somewhere high. The water rises but doesn’t reach you.")
+        print("Rescue teams arrive. You survived!")
+
+
+# Start the program
+main()
