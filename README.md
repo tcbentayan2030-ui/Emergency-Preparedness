@@ -1,7 +1,7 @@
 # Emergency-Preparedness
 This game will test you on your decision-making in the face of disasters. Be wise in your choices to survive the disaster.
 
-Project Title
+
 - Emergency Preparedness: Test Your Choices during Disasters
 
 Problem Statement
