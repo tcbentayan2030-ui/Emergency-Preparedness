@@ -14,7 +14,7 @@ Planned Features
 -  Our program will use built-in commands, functions, etc. to make our game interactive and fun.
 
 Planned Inputs and Outputs
-- Firstly, the user will a setting, and disaster, which are prompted by the pogram. The program will then return a scenario with the chosen disaster and setting and will ask the user to make choices, depeding on the scenario. It will result in different endings depending on the choices the user made throughout the game.
+- Firstly, the user will choose a setting, and disaster, which are prompted by the pogram. The program will then return a scenario with the chosen disaster and setting and will ask the user to make choices, depeding on the scenario. It will result in different endings depending on the choices the user made throughout the game.
 
 Logic Plan:
 Psuedocode:
