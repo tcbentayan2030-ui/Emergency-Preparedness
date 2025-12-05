@@ -149,7 +149,8 @@ function typhoonhome()
       input choice8
 
       if choice8 == 1 then
-        display "Typhoon lasts 2 more days. You had supplies. You survived!"
+        display "According to the news reposter, the typhoon will last for two days."
+        display "Thankfully, you packed food and water. You survived!"
       end if
 
       if choice8 == 2 then
@@ -157,7 +158,8 @@ function typhoonhome()
       end if
 
       if choice8 == 3 then
-        display "The window shattered and injured you. You survived with cuts."
+        display "The window shattered and injured you. Thankfully, you packed for first aid."
+        display "The typhoon lasted for 2 days but with your food, water, and supplies, you survived perfectly!"
       end if
     end if
 
@@ -185,7 +187,8 @@ function typhoonhome()
       end if
 
       if choice10 == 3 then
-        display "Window shattered, injuring you. You survived but barely."
+        display "Window shattered. Several fragments cut through you, but you didn't pack first aid."
+        display "You survived with a few injuries."
       end if
     end if
   end if
