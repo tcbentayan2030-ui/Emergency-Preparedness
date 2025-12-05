@@ -212,58 +212,70 @@ end function
 
 
 
-function typhoonschool()
-  display "A typhoon is approaching. (enter 1-2)"
-  display "1. Listen to your teacher."
-  display "2. Panic and run to the hallway."
-  input choice12
+function typhoonschool() 
+display "Dark clouds gather outside. Your teacher announces that a typhoon is approaching. What do you do? (enter 1-2)" 
+display "1. Listen carefully to your teacher’s instructions." 
+display "2. Panic and rush to the hallway to look for your friends." 
+input choice12 
 
-  if choice12 == 1 then
-    display "Teacher moves class to a safer room. (enter 1-2)"
-    display "1. Follow the teacher."
-    display "2. Sneak back to get your phone."
-    input choice13
-
-    if choice13 == 1 then
-      display "Wind intensifies. Teacher says: duck, cover, hold. (enter 1-2)"
-      display "1. Duck under a sturdy desk."
-      display "2. Move near the windows."
-      input choice14
-
-      if choice14 == 1 then
-        display "Glass shattered but you were protected. You survived!"
-      else
-        display "Debris flew through the window. You were heavily injured."
-      end if
-
-    else
-      display "Window shatters and debris hits you. You survived but badly injured."
-    end if
-
-  else
-    display "You run into the hallway. (enter 1-2)"
-    display "1. Ignore teacher and keep running."
-    display "2. Go back to class."
-    input choice15
-
-    if choice15 == 1 then
-      display "Part of the ceiling collapsed. You died."
-    else
-      display "You return to the classroom. (enter 1-2)"
-      display "1. Duck under a desk."
-      display "2. Sit frozen and refuse to move."
-      input choice16
-
-      if choice16 == 1 then
-        display "The storm intensifies but you stay safe. You survived!"
-      else
-        display "Debris fell from the ceiling and hit you. You were seriously injured."
-      end if
-    end if
-  end if
-
+  if choice12 == 1 then 
+  display "Your teacher instructs everyone to stay calm and move to a safer classroom away from windows." 
+  display "What will you do? (enter 1-2)" 
+  display "1. Follow the teacher and stay with your class." 
+  display "2. Sneak back to the original classroom to get your phone."
+  input choice13 
+  
+    if choice13 == 1 then 
+    display "The wind outside grows stronger. The windows rattle loudly."   
+    display "Your teacher tells everyone to duck, cover, and hold. What do you do? (enter 1-2)" 
+    display "1. Duck under a sturdy desk and cover your head." 
+    display "2. Move closer to the windows to see what's happening outside." 
+    input choice14 
+    
+      if choice14 == 1 then 
+        display "The glass shattered but you were protected by the desk."
+        display "Rescue teams later arrived and evacuated your class safely. You survived with no injuries!" 
+      else 
+        display "The wind blew debris through the window!" 
+        display "You were struck by shards of glass. Your classmates helped you, but you were heavily injured." 
+        end if 
+        
+    else 
+      display "You sneaked back to get your phone." 
+      display "Suddenly, the wind shattered the classroom window and debris flew inside!" 
+      display "You were knocked unconscious." 
+      display "Hours later, rescuers found you and rushed you to a hospital. You survived, but badly injured." 
+      end if 
+      
+  else 
+    display "You ran into the hallway. The lights flickered and the rain fell loudly outside." 
+    display "A teacher spotted you and yelled for you to return to class. What do you do? (enter 1-2)" 
+    display "1. Ignore them and keep running to look for your friends."
+    display "2. Go back to the classroom like they said." 
+    input choice15 
+    
+    if choice15 == 1 then 
+      display "A strong gust of wind caused part of the ceiling to fall in the hallway!" 
+      display "You were caught under falling debris... You died." 
+    else 
+      display "You ran back to the classroom." 
+      display "Your teacher immediately guided you to safety." 
+      display "What do you do now? (enter 1-2)" 
+      display "1. Follow their instructions and duck under a desk." 
+      display "2. Sit frozen and refuse to move." 
+      input choice16 
+      
+      if choice16 == 1 then 
+        display "The storm intensified, but you stayed safe under the desk." 
+        display "The typhoon passed, and emergency services evacuated your school. You survived!" 
+      else 
+        display "You sat frozen near the center of the room." 
+        display "A large piece of debris fell from the ceiling and hit you!" 
+        display "You were seriously injured, but later rescued." 
+      end if 
+    end if 
+  end if 
 end function
-
 
 
 function floodhome()
@@ -328,7 +340,7 @@ function floodhome()
     end if
 
   else
-    display "You ignored the rain—water rushes inside! (enter 1-2)"
+    display "You ignored the rain. Water rushes inside! (enter 1-2)"
     display "1. Run outside."
     display "2. Go upstairs."
     input choice22
