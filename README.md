@@ -1,5 +1,6 @@
 # Emergency-Preparedness
 This game will test you on your decision-making in the face of disasters. Be wise in your choices to survive the disaster.
+Made by: Trixie Bentayan, Mico Batula, and Lance Babael
 
 Project Title
 - Emergency Preparedness: Test Your Choices during Disasters
