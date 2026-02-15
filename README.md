@@ -384,7 +384,8 @@ function floodstreet()
     if choice25 == 1 then
       display "Rescue vehicle found you. You survived!"
     else
-      display "Flood surge hits suddenly. You died."
+      display "The water keeps rising! You struggle to continue walking."
+      display "Your chances of getting an infection, skin rash, or disease increases."
     end if
 
   else
@@ -421,7 +422,7 @@ function floodschool()
     if choice28 == 1 then
       display "You remained safe upstairs. Rescuers arrived later. You survived!"
     else
-      display "Floodwater rose too fast. You drowned."
+      display "Floodwater rose too fast. You're at risk of infection, rashes, and disease."
     end if
   end if
 
