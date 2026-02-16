@@ -256,7 +256,7 @@ input choice12
     display "A teacher spotted you and yelled for you to return to class. What do you do? (enter 1-2)" 
     display "1. Ignore them and keep running to look for your friends."
     display "2. Go back to the classroom like they said." 
-    input choice15 
+    input choice15 pr
     
     if choice15 == 1 then 
       display "A strong gust of wind caused part of the ceiling to fall in the hallway!" 
@@ -323,7 +323,7 @@ function floodhome()
         display "A surge of water hits you when you open the door. You are swept away. You died."
       end if
 
-    else
+    el
       display "You rushed upstairs but forgot essentials. (enter 1-3)"
       display "1. Use phone flashlight and stay put."
       display "2. Go downstairs for items."
