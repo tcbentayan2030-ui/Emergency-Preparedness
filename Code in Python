@@ -176,3 +176,176 @@ def function typhoonschool():
 
         if choice13 == "1":
             print("The wind grows stronger")
+            print("Your teacher tells everyone to duck, cover, and hold. What do you do?")
+            print("1. Duck under a sturdy desk and cover your head.")
+            print("2. Move closer to the windows to see what's happening outside.")
+            choice14 = input("Enter your choice: ")
+
+            if choice14 == "1":
+                print("The glass shattered but you were protected by the desk.")
+                print("Rescue teams later arrived and evacuated your class safely. You survived with no injuries!")
+            if choice14 == "2":
+                print("The wind blew debris through the window!")
+                print("You were struck by shards of glass. Your classmates helped you, but you were heavily injured.")
+            end if
+        
+        if choice13 == "2":
+            print("You sneaked back to get your phone.")
+            print("Suddenly, the wind shattered the classroom window and debris flew inside!")
+            print("You were knocked unconscious")
+            print("Hours later, rescuers found you and rushed you to a hospital. You survived, but badly injured.")
+        end if
+
+    if choice12 == "3":
+        print("You ran into the hallway. The lights flickered and the rain fell loudly outside.")
+        print("A teacher spotted you and yelled for you to return to class. What do you do?")
+        print("1. Ignore them and keep running to look for your friends.")
+        print("2. Go back to the classroom like they said.")
+        choice15 = input("What will you do? enter 1 or 2: ")
+
+        if choice15 == "1":
+            print("A strong gust of wind caused part of the ceiling to fall in the hallway!")
+            print("You were caught under falling debris... You died.")
+
+        if choice15 == "2":
+            print("You ran back to the classroom."
+            print("Your teacher immediately guided you to safety.")
+            print("The storm intensified, but emergency services arrived in your school!")
+            print("You were led to safety.")
+        end if
+    end if
+end def
+
+def floodhome():
+    print("It's been raining for hours. Water is rising. (enter 1-2)")
+    print("1. Check the news.")
+    print("2. Ignore it.")
+    choice17 = input("Enter 1 or 2: ")
+
+    if choice17 == "1":
+        print("Severe flood warning! Prepare the emergency kit.")
+        print("1. Prepare the kit properly.")
+        print("2. Pack a few items and rush upstairs.")
+        choice18 = input("enter 1-2: ")
+
+        if choice18 == "1":
+            print("Floodwater enters the house!")
+            print("1. Go upstairs.")
+            print("2. Go outside for rescuers.")
+            choice19 = input("Enter 1-2: ")
+
+            if choice19 == "1":
+                print("You are upstairs.")
+                print("1. Listen to radio updates.")
+                print("2. Look out the window.")
+                print("3. Try to wade to a neighbor.")
+                choice20 = input("Enter 1-3: ")
+
+                if choice20 == "1":
+                    print("Rescuers eventually arrived. You survived!")
+
+                if choice20 == "2":
+                    print("Debris breaks the window. You are cut but survive.")
+
+                if choice20 == "3":
+                    print("You ingested flood water and gained a life-threatening illness.")
+
+            if choice19 == "2": 
+                print("A surge of water hits you when you open the door. You ingested contaminated water.")
+                print("You have a severe terminal illness.")
+
+        else:
+            print("You rushed upstairs but forgot essentials.")
+            print("1. Use phone flashlight and stay put.")
+            print("2. Go downstairs for items.")
+            print("3. Signal from the window.")
+            choice21 = input("Enter 1-3: ")
+
+            if choice21 == 1:
+                print("Rescuers arrived. You survived but were cold and hungry.")
+
+            if choice21 == 2:
+                print("Water too high; you slipped and drowned.")
+
+            if choice21 == 3:
+                print("Neighbors signaled rescuers. You survived.")
+
+    else:
+        print("You ignored the rain. Water rushes inside!")
+        print("1. Run outside.")
+        print("2. Go upstairs.")
+        choice22 = input("enter 1-2: ")
+
+        if choice22 == 1:
+            print("Current too strong; you were swept away. You died.")
+        else:
+            print("You are upstairs without supplies.")
+            print("1. Wait for rescue.")
+            print("2. Signal for help.")
+            choice23 = input("enter 1-2: ")
+
+            if choice23 == 1:
+                print("You survived but exhausted and dehydrated.")
+            else:
+                print("A rescue boat saw your signal. You survived!")
+            end if
+        end if
+    end if
+end def
+
+def floodstreet():
+    print("Rain intensifies. Water is rising.")
+    print("1. Look for higher ground.")
+    print("2. Try to walk home.")
+    choice24 = input("What will you do? enter 1 or 2: ")
+
+    if choice24 == "1":
+        print("You climbed to higher ground.")
+        print("1. Wait for rescue.")
+        print("2. Try running home.")
+        choice25 = input("What will you do? enter 1 or 2: ")
+
+        if choice25 == "1":
+            print("Rescue vehicle found you. You survived!")
+        else:
+            print("The water keeps rising! You struggle to continue walking.")
+            print("Your chances of getting an infection, skin rash, or disease increases.")
+
+    else:
+        print("Water reaches your knees.")
+        print("1. Keep pushing toward home.")
+        print("2. Retreat to higher ground.")
+        choice26 = input("What will you do? enter 1 or 2: ")
+
+        if choice26 == "1":
+            print("Strong currents swept you away. You died.")
+        else:
+            print("You waited on high ground and were rescued. You survived!")
+        end if
+    end if
+end def
+
+def floodschool():
+    print("School grounds are flooding.")
+    print("1. Go home as instructed.")
+    print("2. Stay inside the classroom.")
+    choice27 = input("What will you do? enter 1 or 2: ")
+
+    if choice27 == "1":
+        print("You pack your things and leave the school.")
+        floodhome()
+    else:
+        print("Floodwater enters the school!")
+        print("1. Move to the second floor.")
+        print("2. Hide under a desk.")
+        choice28 = input("What will you do? enter 1 or 2: ")
+
+        if choice28 == "1":
+            print("You remained safe upstairs. Rescuers arrived later. You survived!")
+        else:
+            print("Floodwater rose too fast. You're at risk of infection, rashes, and disease.")
+        end if
+    end if
+end def
+
+main ()
