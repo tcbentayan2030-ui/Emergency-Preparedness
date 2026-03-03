@@ -288,10 +288,6 @@ def floodhome():
                 print("You survived but exhausted and dehydrated.")
             else:
                 print("A rescue boat saw your signal. You survived!")
-            end if
-        end if
-    end if
-end def
 
 def floodstreet():
     print("Rain intensifies. Water is rising.")
@@ -321,9 +317,6 @@ def floodstreet():
             print("Strong currents swept you away. You died.")
         else:
             print("You waited on high ground and were rescued. You survived!")
-        end if
-    end if
-end def
 
 def floodschool():
     print("School grounds are flooding.")
@@ -344,8 +337,5 @@ def floodschool():
             print("You remained safe upstairs. Rescuers arrived later. You survived!")
         else:
             print("Floodwater rose too fast. You're at risk of infection, rashes, and disease.")
-        end if
-    end if
-end def
 
 main ()
