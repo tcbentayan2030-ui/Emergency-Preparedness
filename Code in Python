@@ -46,7 +46,7 @@ def earthquake(setting):
 
     else:
         print("You fell and twisted your ankle while running outside. What do you do? (enter 1-2)")
-        print("1. Keep running to get out of the house and seek medical attention.")
+        print("1. Keep running to get out of the building and seek medical attention.")
         print("2. Duck and stay away from windows. Crawl under a sturdy structure and protect your head.")
         choice3 = input("Enter your choice: ")
 
@@ -144,7 +144,7 @@ def typhoonhome():
                 print("The window shattered and injured you.")
                 print("You survived but your wounds almost got infected and you were severely dehydrated and starving.")
 
-def function typhoonstreet():
+def typhoonstreet():
     print("Heavy rain starts as you're walking on the streets. What do you do? (enter 1-2)")
     print("1. Find authorities.")
     print("2. Go home.")
@@ -158,7 +158,7 @@ def function typhoonstreet():
         print("A pile of debris hit you! You feel blood tickling your forehead before passing out.")
         print("...You died.")
 
-def function typhoonschool():
+def typhoonschool():
     print("Thick clouds covered the sky before heavy rainfall follows.")
     print("Your teacher announces that a typhoon is approaching. What do you do? (enter 1-3)")
     print("1. Go home while the weather isn't severe yet.")
@@ -187,14 +187,12 @@ def function typhoonschool():
             if choice14 == "2":
                 print("The wind blew debris through the window!")
                 print("You were struck by shards of glass. Your classmates helped you, but you were heavily injured.")
-            end if
         
         if choice13 == "2":
             print("You sneaked back to get your phone.")
             print("Suddenly, the wind shattered the classroom window and debris flew inside!")
             print("You were knocked unconscious")
             print("Hours later, rescuers found you and rushed you to a hospital. You survived, but badly injured.")
-        end if
 
     if choice12 == "3":
         print("You ran into the hallway. The lights flickered and the rain fell loudly outside.")
@@ -208,13 +206,10 @@ def function typhoonschool():
             print("You were caught under falling debris... You died.")
 
         if choice15 == "2":
-            print("You ran back to the classroom."
+            print("You ran back to the classroom.")
             print("Your teacher immediately guided you to safety.")
             print("The storm intensified, but emergency services arrived in your school!")
             print("You were led to safety.")
-        end if
-    end if
-end def
 
 def floodhome():
     print("It's been raining for hours. Water is rising. (enter 1-2)")
