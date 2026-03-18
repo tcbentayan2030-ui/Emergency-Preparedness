@@ -33,7 +33,7 @@ def main():
     if disaster == "3" and setting == "school":
         floodschool()
 
-def earthquake(setting):
+def earthquakehome():
     print("You are at", setting, "and the ground starts shaking aggressively! What do you do? (enter 1-2)")
     print("1. Hide under a sturdy table and cover your head.")
     print("2. Run outside to find adults and seek guidance.")
@@ -62,6 +62,17 @@ def earthquake(setting):
             print("... You died.")
         else:
             print("The ground stopped shaking. Your ankle aches but you were safe. You eventually received medical attention. Good job!")
+
+def earthquakeschool():
+    print("You're in the middle of a lesson and the ground starts shaking heavily! What do you do? (enter 1-2)")
+    print("1. Open facebook and post about it to raise awareness.")
+    print("2. Duck, cover your head, and hold onto a sturdy table or chair.")
+    choice1 = input("Enter your choice: ")
+
+    if choice1 == "1":
+        print("You got caught off guard and bruised your kneesu. What do you do?"
+        print("The teacher scolds you and tells you to duck, cover, and hold. The earthquake increases in intensity!")
+        print("1. Go outside to an open field to avoid ")
 
 def earthquakestreet():
     print("You are walking outside when the ground starts shaking aggressively! What will you do? (enter 1-3)")
