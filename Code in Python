@@ -46,7 +46,7 @@ def earthquake(setting):
         choice2 = input("Enter your choice: ")
 
         if choice2 == "1":
-            print("The ground stopped shaking. You were protected from broken glass and falling debris. You survived with no injuries!")
+            print("The ground stopped shaking. You protected your head from broken glass and falling debris. You survived with no injuries!")
         else:
             print("You tripped while running outside and debris fell on you! You were heavily injured.")
 
