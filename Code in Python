@@ -6,14 +6,20 @@ def main():
     print("Choose a setting (home / school / street): ")
     setting = input("Enter your setting: ")
 
-    if disaster == "1" and (setting == "home" or setting == "school"):
-        earthquake(setting)
+    if disaster == "1" and (setting == "home"):
+        earthquakehome()
+
+    if disaster == "1" and setting == "school":
+        earthquakeschool()
 
     if disaster == "1" and setting == "street":
         earthquakestreet()
 
     if disaster == "2" and setting == "home":
         typhoonhome()
+
+    if disaster == "2" and setting == "school":
+        typhoonschool()
 
     if disaster == "2" and setting == "street":
         typhoonstreet()
