@@ -70,7 +70,7 @@ def earthquakeschool():
     choice1 = input("Enter your choice: ")
 
     if choice1 == "1":
-        print("You got caught off guard and bruised your kneesu. What do you do?"
+        print("You got caught off guard and bruised your kneesu. What do you do?")
         print("The teacher scolds you and tells you to duck, cover, and hold. The earthquake increases in intensity!")
         print("1. Go outside to an open field to avoid ")
 
