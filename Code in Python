@@ -203,14 +203,14 @@ def typhoonhome():
 
     else:
         print("You didn’t notice water entering the house! What now? (enter 1-2)")
-        print("1. Run outside to seek guidance.")
+        print("1. Run outside to find authorities.")
         print("2. Unplug outlets and go upstairs.")
         choice4 = get_choice("Enter your choice: ", ["1", "2"])
 
         if choice4 == "1":
             print("The wind is too strong. A tree falls toward you...")
             print("...You died.\n")
-            print("Never go outside, unless for evacuation. Watch out for falling objects and try to avoid trees.")
+            print("Never try to go outside unless for evacuation. Avoid anything that could fall on you, like trees and balconies.")
             retry()
         else:
             print("Water rises but you are safe upstairs.")
@@ -239,7 +239,7 @@ def typhoonstreet():
     print("1. Find authorities.")
     print("2. Go home.")
     print("3. Follow the evacuation plan")
-    choice1 = get_choice("Enter your choice: ", ["1", "2", "3"])
+    choice1 = get_choice("Enter your choice: ", ["1", "2"])
 
     if choice1 == "2":
         typhoonhome()
@@ -377,7 +377,7 @@ def floodhome():
             print("1. Use phone flashlight and stay put.")
             print("2. Go downstairs for items.")
             print("3. Signal from the window.")
-            choice5 = get_choice("Enter your choice: ", ["1", "2"])
+            choice5 = get_choice("Enter your choice: ", ["1", "2", "3"])
 
             if choice5 == 1:
                 print("Rescuers arrived. You survived but were cold and hungry.")
@@ -470,4 +470,4 @@ def floodschool():
             print("Floodwater rose too fast. You're at risk of infection, rashes, and disease.")
             retry()
 
-main ()
+main()
