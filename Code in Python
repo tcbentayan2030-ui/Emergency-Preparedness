@@ -160,7 +160,9 @@ def earthquakestreet():
             retry()
 
     if choice1 == "3":
-        print("A pile of debris hit you! You lose consciousness and never wake up again.")
+        print("Shattered glass hits you! You get a few injuries on your arms.")
+        print("After, it's best not to move. Crouch and keep covering your head.")
+        print("However, it would be best to avoid buildings if you're outside.")
         retry()
 
 def typhoonhome():
@@ -233,16 +235,40 @@ def typhoonstreet():
     print("Heavy rain starts as you're walking on the streets. What do you do? (enter 1-2)")
     print("1. Find authorities.")
     print("2. Go home.")
+    print("3. Follow the evacuation plan")
     choice1 = get_choice("Enter your choice: ", ["1", "2"])
 
     if choice1 == "2":
         typhoonhome()
-    else:
+    if choice1 == 1:
         print("The rain and winds intensified! Roads were blocked from traffic.")
         print("You were heavily injured by flying branches and metal sheets!")
         print("A pile of debris hit you! You feel blood tickling your forehead before passing out.")
-        print("...You died.")
+        print("...You died.\n")
+        print("Never try to go outside during a typhoon, unless for evacuation.")
         retry()
+    if choice1 == "3":
+        print("Where will you go? (enter 1-2)\n 1. A path with less cars and buildings but more trees.\n 2. A path with more cars and buildings but less trees.")
+        choice2 = get_choice("Enter your choice: ", ["1", "2"])
+
+        if choice2 == "1":
+            print("Some branches flew into you, but you avoided major injuries.")
+            print("That was, until a tree fell and hit you right before you made it to the evacuation center.\n Luckily, rescuers saved you and you survived.")
+            print("Trees have a high chance of falling. Try to avoid them.")
+            retry()
+        else:
+            print("Where will you go? \n 1. Streets. \n 2. Sidewalk.")
+            choice3 = get_choice("Enter your choice: ", ["1", "2"])
+
+            if choice3 == 1:
+                print("A car lost control amidst strong wind and rain. It's heading towards you! \n You died.")
+                print("Walk in the sidewalk instead next time. However, be careful with glass and balconies.")
+                retry()
+            else"
+                print("You watch out for falling glass and debris from balconies and ceilings. Also, the tall buildings protected you from strong winds.")
+                print("You made it to the evacuation safely! Congratulations!")
+                retry()
+
 
 def typhoonschool():
     print("Thick clouds covered the sky before heavy rainfall follows.")
@@ -335,6 +361,7 @@ def floodhome():
 
                 if choice4 == "3":
                     print("You ingested flood water and gained a life-threatening illness.")
+                    print("Getting an illness from flood water is highly likely, according to Centers of Disease Control and Prevention.")
                     retry()
 
             if choice3 == "2": 
@@ -354,7 +381,8 @@ def floodhome():
                 retry()
 
             if choice5 == 2:
-                print("Water too high; you slipped and drowned.")
+                print("Water was too high; you slipped and fell. You accidentally ingested flood water.")
+                print("After the flood, you were diagnosed with a serious stomach flu.")
                 retry()
 
             if choice5 == 3:
