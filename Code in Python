@@ -39,6 +39,7 @@ def retry():
         answer = input("Do you want to play again? (yes/no): ").strip().lower()
 
         if answer == "yes":
+            print("- " * 10)
             main()
             break
         elif answer == "no":
@@ -202,13 +203,15 @@ def typhoonhome():
 
     else:
         print("You didn’t notice water entering the house! What now? (enter 1-2)")
-        print("1. Run outside to find authorities.")
+        print("1. Run outside to seek guidance.")
         print("2. Unplug outlets and go upstairs.")
         choice4 = get_choice("Enter your choice: ", ["1", "2"])
 
         if choice4 == "1":
             print("The wind is too strong. A tree falls toward you...")
-            print("...You died.")
+            print("...You died.\n")
+            print("Never go outside, unless for evacuation. Watch out for falling objects and try to avoid trees.")
+            retry()
         else:
             print("Water rises but you are safe upstairs.")
             print("What now? (enter 1-3)")
@@ -236,7 +239,7 @@ def typhoonstreet():
     print("1. Find authorities.")
     print("2. Go home.")
     print("3. Follow the evacuation plan")
-    choice1 = get_choice("Enter your choice: ", ["1", "2"])
+    choice1 = get_choice("Enter your choice: ", ["1", "2", "3"])
 
     if choice1 == "2":
         typhoonhome()
@@ -264,7 +267,7 @@ def typhoonstreet():
                 print("A car lost control amidst strong wind and rain. It's heading towards you! \n You died.")
                 print("Walk in the sidewalk instead next time. However, be careful with glass and balconies.")
                 retry()
-            else"
+            else:
                 print("You watch out for falling glass and debris from balconies and ceilings. Also, the tall buildings protected you from strong winds.")
                 print("You made it to the evacuation safely! Congratulations!")
                 retry()
