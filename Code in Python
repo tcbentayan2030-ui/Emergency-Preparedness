@@ -227,7 +227,7 @@ def typhoonhome():
             if choice5 == "2":
                 print("A power surge electrocuted you!")
                 print("You died.")
-                retrty()
+                retry()
 
             if choice5 == "3":
                 print("The window shattered and injured you.")
