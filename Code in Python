@@ -146,7 +146,8 @@ def earthquakestreet():
     choice1 = get_choice("Enter your choice: ", ["1", "2", "3"])
 
     if choice1 == "1":
-        print("People shouted as cars honked. You were hit by small debris but survived. Pick the safest choice next time.")
+        print("You were safe from debris, shattered glass, and cars. Congratulations!")
+        retry()
 
     if choice1 == "2":
         print("Debris fell on your head at the entrance! Your head throbs. What do you do? (enter 1-2)")
@@ -155,10 +156,10 @@ def earthquakestreet():
         choice2 = get_choice("Enter your choice: ", ["1", "2"])
 
         if choice2 == "1":
-            print("The glass shattered and so did the lights. However, you were safe and survived with a minor head injury.")
+            print("The glass shattered and so did the lights. However, you were safe and survived with a minor head injury. \n Don't enter buildings for the best outcome.")
             retry()
         else:
-            print("You were hit by more shattering glass and debris. You woke up in a hospital, injured but alive.")
+            print("You were hit by more shattering glass and debris. You woke up in a hospital, injured but alive. \n Avoid constantly moving places for the best outcome.")
             retry()
 
     if choice1 == "3":
@@ -185,6 +186,7 @@ def typhoonhome():
             print("The wind is too strong. A tree falls toward you...")
             print("...You died.")
             print("Tip: Winds are strong during a typhoon, always seek shelter.")
+            retry()
         else:
             print("Water starts rising but you are safe upstairs.")
             print("What now? (enter 1-3)")
@@ -195,13 +197,16 @@ def typhoonhome():
 
             if choice3 == "1":
                 print("The typhoon will last two more days. Luckily, you have food. You survived!")
+                retry()
 
             if choice3 == "2":
                 print("A power surge occurred when you plugged in the TV. You were electrocuted!")
-                print("You died.")
+                print("You died. \n Don't try to plug in electronics during typhoons and flood.")
+                retry()
 
             if choice3 == "3":
                 print("The window shattered and injured you! But you had first-aid. You survived with cuts.")
+                retry()
 
     else:
         print("You didn’t notice water entering the house! What now? (enter 1-2)")
@@ -243,7 +248,7 @@ def typhoonstreet():
     print("1. Find authorities.")
     print("2. Go home.")
     print("3. Follow the evacuation plan")
-    choice1 = get_choice("Enter your choice: ", ["1", "2"])
+    choice1 = get_choice("Enter your choice: ", ["1", "2", "3"])
 
     if choice1 == "2":
         typhoonhome()
@@ -303,17 +308,19 @@ def typhoonschool():
             if choice3 == "1":
                 print("The glass shattered but you were protected by the desk.")
                 print("Rescue teams later arrived and evacuated your class safely. You survived with no injuries!")
+                retry()
             if choice3 == "2":
                 print("The wind blew debris through the window!")
-                print("You were struck by shards of glass. Your classmates helped you, but you were heavily injured.")
+                print("You were struck by shards of glass. Your classmates helped you, but you were heavily injured. \n Avoid windows for the best outcome.")
+                retry()
 
         
         if choice2 == "2":
             print("You sneaked back to get your phone.")
             print("Suddenly, the wind shattered the classroom window and debris flew inside!")
             print("You were knocked unconscious")
-            print("Hours later, rescuers found you and rushed you to a hospital. You survived, but badly injured.")
-
+            print("Hours later, rescuers found you and rushed you to a hospital. You survived, but badly injured. \n Avoid moving from one place to another, especially when the place has windows that could shatter and debris that could fall.")
+            retry()
     if choice1 == "3":
         print("You ran into the hallway. The lights flickered and the rain fell loudly outside.")
         print("A teacher spotted you and yelled for you to return to class. What do you do?")
@@ -380,20 +387,15 @@ def floodhome():
             print("You rushed upstairs but forgot essentials.")
             print("1. Use phone flashlight and stay put.")
             print("2. Go downstairs for items.")
-            print("3. Signal from the window.")
-            choice5 = get_choice("Enter your choice: ", ["1", "2", "3"])
+            choice5 = get_choice("Enter your choice: ", ["1", "2"])
 
             if choice5 == 1:
-                print("Rescuers arrived. You survived but were cold and hungry.")
+                print("Rescuers arrived. You survived but were cold and hungry. \n Always prepare an emergency kit with food, water, blanket, medicine, flashlight, and extra clothes for the best outcome.")
                 retry()
 
             if choice5 == 2:
                 print("Water was too high; you slipped and fell. You accidentally ingested flood water.")
                 print("After the flood, you were diagnosed with a serious stomach flu.")
-                retry()
-
-            if choice5 == 3:
-                print("Neighbors signaled rescuers. You survived.")
                 retry()
 
     else:
