@@ -26,6 +26,7 @@ def main():
         scenario_map[key]()
     else:
         print("Invalid disaster or setting.")
+        retry()
 
 def get_choice(prompt, valid_choices):
     while True:
@@ -252,7 +253,7 @@ def typhoonstreet():
 
     if choice1 == "2":
         typhoonhome()
-    if choice1 == 1:
+    if choice1 == "1":
         print("The rain and winds intensified! Roads were blocked from traffic.")
         print("You were heavily injured by flying branches and metal sheets!")
         print("A pile of debris hit you! You feel blood tickling your forehead before passing out.")
@@ -272,7 +273,7 @@ def typhoonstreet():
             print("Where will you go? \n 1. Streets. \n 2. Sidewalk.")
             choice3 = get_choice("Enter your choice: ", ["1", "2"])
 
-            if choice3 == 1:
+            if choice3 == "1":
                 print("A car lost control amidst strong wind and rain. It's heading towards you! \n You died.")
                 print("Tip: Walk in the sidewalk instead next time. However, be careful with glass and balconies.")
                 retry()
@@ -389,11 +390,11 @@ def floodhome():
             print("2. Go downstairs for items.")
             choice5 = get_choice("Enter your choice: ", ["1", "2"])
 
-            if choice5 == 1:
+            if choice5 == "1":
                 print("Rescuers arrived. You survived but were cold and hungry. \n Always prepare an emergency kit with food, water, blanket, medicine, flashlight, and extra clothes for the best outcome.")
                 retry()
 
-            if choice5 == 2:
+            if choice5 == "2":
                 print("Water was too high; you slipped and fell. You accidentally ingested flood water.")
                 print("After the flood, you were diagnosed with a serious stomach flu.")
                 retry()
@@ -404,7 +405,7 @@ def floodhome():
         print("2. Go upstairs.")
         choice6 = get_choice("Enter your choice: ", ["1", "2"])
 
-        if choice6 == 1:
+        if choice6 == "1":
             print("Current too strong; you were swept away. You died.")
             retry()
         else:
@@ -413,7 +414,7 @@ def floodhome():
             print("2. Signal for help.")
             choice7 = get_choice("Enter your choice: ", ["1", "2"])
 
-            if choice7 == 1:
+            if choice7 == "1":
                 print("You survived but exhausted and dehydrated.")
                 print("Help would've arrived quicker had you signaled for help.")
                 retry()
